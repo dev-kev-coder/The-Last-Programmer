@@ -1,0 +1,38 @@
+
+# Godot-specific ignores
+.import/
+export_presets.cfg
+mono/
+*.import
+*.pck
+*.stex
+
+# Godot mono-specific ignores
+.mono/
+mono/*/Api/
+mono/*/Assemblies/
+mono/*/Config/
+mono/.mono/
+*.csproj
+*.sln
+
+# User-specific stuff
+*.user
+*.userprefs
+*.vs/
+*.vscode/
+*.idea/
+__pycache__/
+*.pidb
+*.pidb.meta
+
+# OS generated files
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project-specific ignores
+# Add folders and files specific to your project that should not be tracked
