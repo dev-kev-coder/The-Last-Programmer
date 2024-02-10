@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/SandboxWorld.cs" type="Script" id=1]
 [ext_resource path="res://Scripts/Player.cs" type="Script" id=2]
 [ext_resource path="res://Assests/test.webp" type="Texture" id=3]
+[ext_resource path="res://Assests/grass.webp" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 51.5, 51.5 )
@@ -17,12 +18,12 @@ script = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
-position = Vector2( 247.2, 218.2 )
+position = Vector2( 56.2, 56.2 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( 246.7, 217.7 )
+position = Vector2( 55.7, 55.7 )
 shape = SubResource( 1 )
 
 [node name="Ground" type="StaticBody2D" parent="."]
@@ -30,3 +31,8 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
 position = Vector2( 515.5, 574 )
 shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Ground"]
+position = Vector2( 516.688, 572.5 )
+scale = Vector2( 1.00647, 0.0634767 )
+texture = ExtResource( 4 )
