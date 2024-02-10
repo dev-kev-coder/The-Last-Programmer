@@ -1,38 +1,26 @@
-
-# Godot-specific ignores
+# Godot-specific
 .import/
+export.cfg
 export_presets.cfg
-mono/
+.mono/
 *.import
 *.pck
 *.stex
 
-# Godot mono-specific ignores
-.mono/
-mono/*/Api/
-mono/*/Assemblies/
-mono/*/Config/
-mono/.mono/
-*.csproj
-*.sln
-
-# User-specific stuff
+# C#-specific
+bin/
+obj/
 *.user
 *.userprefs
 *.vs/
-*.vscode/
-*.idea/
-__pycache__/
-*.pidb
-*.pidb.meta
+*.suo
+*.tmp
+*.sln.docstates
 
-# OS generated files
-.DS_Store*
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+# Include C# project and solution files
+!/*.csproj
+!/*.sln
+
+# Other common ignores
+.DS_Store
 Thumbs.db
-
-# Project-specific ignores
-# Add folders and files specific to your project that should not be tracked
